@@ -1,0 +1,24 @@
+{
+  "name": "oldwood",
+  "version": "1.0.0",
+  "description": "A conveniência máxima para pessoas ocupadas. Serviços de barbeiro em casa.",
+  "scripts": {
+    "lint": "eslint src/**/*.js",
+    "dev": "parcel serve src/index.html --public-url / --dist-dir docs",
+    "build": "rimraf docs && parcel build src/index.html --dist-dir docs",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Jefferson Souza",
+  "license": "ISC",
+  "devDependencies": {
+    "@eslint/js": "^9.13.0",
+    "@parcel/transformer-sass": "^2.12.0",
+    "@popperjs/core": "^2.11.8",
+    "bootstrap": "^5.3.3",
+    "eslint": "^9.13.0",
+    "globals": "^15.11.0",
+    "parcel": "^2.12.0",
+    "rimraf": "^6.0.1",
+    "sass": "^1.80.5"
+  }
+}
