@@ -1,0 +1,47 @@
+@font-face {
+  font-family: 'Barlow';
+  src: url('/src/assets/fonts/barlow/Barlow-Regular.woff2') format('woff2'),
+    url('/src/assets/fonts/barlow/Barlow-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Barlow';
+  src: url('/src/assets/fonts/barlow/Barlow-Bold.woff2') format('woff2'),
+    url('/src/assets/fonts/barlow/Barlow-Bold.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Barlow';
+  src: url('/src/assets/fonts/barlow/Barlow-ExtraBold.woff2') format('woff2'),
+    url('/src/assets/fonts/barlow/Barlow-ExtraBold.woff') format('woff');
+  font-weight: 800;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Barlow';
+  src: url('/src/assets/fonts/barlow/Barlow-Black.woff2') format('woff2'),
+    url('/src/assets/fonts/barlow/Barlow-Black.woff') format('woff');
+  font-weight: 900;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Work Sans';
+  src: url('/src/assets/fonts/work-sans/WorkSans-Regular.woff2') format('woff2'),
+    url('/src/assets/fonts/work-sans/WorkSans-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Work Sans';
+  src: url('/src/assets/fonts/work-sans/WorkSans-Medium.woff2') format('woff2'),
+    url('/src/assets/fonts/work-sans/WorkSans-Medium.woff') format('woff');
+  font-weight: 500;
+  font-style: normal;
+}
