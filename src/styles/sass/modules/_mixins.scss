@@ -1,0 +1,50 @@
+$xxl-device: 1400px;
+$xl-device: 1200px;
+$l-device: 992px;
+$md-device: 768px;
+$sm-device: 576px;
+$xs-device: 0;
+
+@mixin device($size) {
+  @if ($size == xxl) {
+    @media screen and (min-width: $xxl-device) {
+      @content;
+    }
+  }
+  @if ($size == xl) {
+    @media screen and (min-width: $xl-device) and (max-width: ($xxl-device - 1)) {
+      @content;
+    }
+  }
+  @if ($size == l) {
+    @media screen and (min-width: $l-device) and (max-width: ($xl-device - 1)) {
+      @content;
+    }
+  }
+  @if ($size == md) {
+    @media screen and (min-width: $md-device) and (max-width: ($l-device - 1)) {
+      @content;
+    }
+  }
+  @if ($size == sm) {
+    @media screen and (min-width: $sm-device) and (max-width: ($md-device - 1)) {
+      @content;
+    }
+  }
+  @if ($size == xs) {
+    @media screen and (min-width: $xs-device) and (max-width: ($sm-device - 1)) {
+      @content;
+    }
+  }
+}
+
+@mixin box-shadow($shadow...) {
+  box-shadow: $shadow;
+}
+
+@mixin zoom($scale: 1.01) {
+  transition: transform 0.3s ease;
+  &:hover {
+    transform: scale($scale);
+  }
+}

@@ -5,5 +5,13 @@ $font-weight-semibold: bold;
 $font-weight-bold: 800; //extrabold
 $font-weight-bolder: 900; //black
 
-$warning: #f2c94c;
-$warning-bg-subtle: #dec7a6;
+$warning: #dec7a6;
+$warning-bg-subtle: #f2c94c;
+
+$font-size-base: 1rem;
+$h1-font-size: $font-size-base * 4.5; //72
+$h2-font-size: $font-size-base * 3; //48
+$h3-font-size: $font-size-base * 1.5; //24
+$h4-font-size: $font-size-base * 1.25; //20
+$h5-font-size: $font-size-base * 1.125; //18
+$h6-font-size: $font-size-base; //16
