@@ -18,10 +18,9 @@
 
 .contact-bg {
   position: relative;
-  margin-bottom: 150px;
+  top: -60px;
+  margin-bottom: 100px;
   .container {
-    position: absolute;
-    top: -60px;
     @include box-shadow(0px 4px 30px rgba(0, 0, 0, 0.05));
     .row {
       hr {
@@ -30,6 +29,17 @@
         background: $warning;
         border: 1px solid $warning;
       }
+    }
+  }
+}
+
+.about-bg {
+  .about-content {
+    @include device(l) {
+      padding-right: 50px;
+    }
+    @media screen and (min-width: $xl-device) {
+      padding-right: 170px;
     }
   }
 }

@@ -8,10 +8,10 @@ export default [
         ...globals.browser,
         ...globals.node,
       },
-    },
-    parserOptions: {
-      ecmaVersion: 2021,
-      sourceType: 'module',
+      parserOptions: {
+        ecmaVersion: 2021,
+        sourceType: 'module',
+      },
     },
   },
   pluginJs.configs.recommended,
