@@ -44,3 +44,33 @@
     }
   }
 }
+
+.services-bg {
+  .container {
+    padding: 0 100px;
+    gap: 74px;
+    @media screen and (max-width: ($l-device - 1)) {
+      padding: 0 30px;
+    }
+    header {
+      @include device(l) {
+      }
+      @media screen and (min-width: $xxl-device) {
+        gap: 34px;
+        margin: 0 110px;
+        padding: 0 130px;
+      }
+    }
+    .services-cost {
+      gap: 45px;
+      padding: 90px;
+      @include box-shadow(0px 4px 30px rgba(0, 0, 0, 0.1));
+      @include device(l) {
+        padding: 65px 50px;
+      }
+      @include device(md) {
+        padding: 45px 30px;
+      }
+    }
+  }
+}
