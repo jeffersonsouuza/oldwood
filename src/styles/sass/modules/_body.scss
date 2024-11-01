@@ -46,6 +46,7 @@
 }
 
 .services-bg {
+  margin-bottom: 151px;
   .container {
     padding: 0 100px;
     gap: 74px;
@@ -72,5 +73,16 @@
         padding: 45px 30px;
       }
     }
+  }
+}
+
+.experience-bg {
+  background-image: url('/src/assets/images/experience-luxury.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: left;
+  height: 569px;
+  .container {
+    gap: 46px;
   }
 }
