@@ -1,5 +1,5 @@
 .header-bg {
-  background-image: url('/src/assets/images/hero-img.png');
+  background-image: url('/src/assets/images/hero-img.jpg');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: top;
@@ -34,6 +34,7 @@
 }
 
 .about-bg {
+  margin-bottom: 100px;
   .about-content {
     @include device(l) {
       padding-right: 50px;
