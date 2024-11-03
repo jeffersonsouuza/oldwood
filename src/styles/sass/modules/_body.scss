@@ -86,3 +86,50 @@
     gap: 46px;
   }
 }
+
+.choose-bg {
+  padding: 136px 67px;
+  @media screen and (max-width: ($md-device - 1)) {
+    padding: 136px 10px;
+  }
+  .container {
+    .choose-header {
+      gap: 40px;
+      margin: 0 160px 70px 160px;
+      padding: 0 120px;
+      @media screen and (max-width: ($xl-device - 1)) {
+        margin: 0 20px 70px 20px;
+        padding: 20px;
+      }
+      @media screen and (max-width: ($md-device - 1)) {
+        margin: 0 10px 70px 10px;
+        padding: 0;
+      }
+    }
+    .choose-content {
+      margin-bottom: 170px;
+      @media screen and (max-width: ($md-device - 1)) {
+        margin-bottom: 100px;
+      }
+    }
+    .choose-avaliation {
+      gap: 15px;
+      > div:nth-of-type(2) {
+        .choose-testimonial {
+          padding: 70px 40px 70px 40px;
+          @media screen and (max-width: ($md-device - 1)) {
+            padding: 70px 0;
+          }
+        }
+      }
+      .stars {
+        display: inline-block;
+        width: calc(5 * 27px);
+        height: 27px;
+        background-image: url('/src/assets/images/icons/star.svg');
+        background-size: 27px;
+        background-repeat: repeat-x;
+      }
+    }
+  }
+}
