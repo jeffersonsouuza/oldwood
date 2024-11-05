@@ -135,7 +135,7 @@
 }
 
 .appointment-bg {
-  background-image: url('/src/assets/images//make-appointment.jpg');
+  background-image: url('/src/assets/images/make-appointment.jpg');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -164,4 +164,12 @@
       background: #f8f5ef;
     }
   }
+}
+
+.location-bg {
+  background-image: url('/src/assets/images/location.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 451px;
 }
