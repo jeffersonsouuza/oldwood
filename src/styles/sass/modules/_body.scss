@@ -133,3 +133,35 @@
     }
   }
 }
+
+.appointment-bg {
+  background-image: url('/src/assets/images//make-appointment.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 641px;
+  @media screen and (max-width: ($l-device - 1)) {
+    height: 100%;
+  }
+  .container {
+    height: 641px;
+    @media screen and (max-width: ($l-device - 1)) {
+      height: 100%;
+    }
+    .appointment-content {
+      gap: 30px;
+    }
+
+    form {
+      position: relative;
+      bottom: -151px;
+      @media screen and (max-width: ($l-device - 1)) {
+        bottom: -100px;
+      }
+    }
+
+    button[type='submit'] {
+      background: #f8f5ef;
+    }
+  }
+}
