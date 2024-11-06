@@ -1,0 +1,37 @@
+name: Build and Deploy
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Check out code
+        uses: actions/checkout@v3
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: '16'
+
+      - name: Install dependencies
+        run: |
+          npm install # Instala todas as dependências do seu projeto
+
+      - name: Build with Parcel
+        run: |
+          npm run build # Gera o build usando o script definido no seu package.json
+
+      - name: Deploy to GitHub Pages (Opcional)
+        if: github.ref == 'refs/heads/main' # Condição de deploy apenas na branch 'main'
+        uses: JamesIves/github-pages-deploy-action@v4
+        with:
+          branch: gh-pages
+          folder: dist
