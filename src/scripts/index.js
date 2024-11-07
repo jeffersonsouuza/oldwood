@@ -1,14 +1,18 @@
 import '../styles/sass/style.scss';
+import {
+  saveCookieLocalStorage,
+  getCookieLocalStorage,
+  displayCookie,
+} from './modules/cookie-consent.js';
+
 import * as bootstrap from 'bootstrap';
 
-// Example starter JavaScript for disabling form submissions if there are invalid fields
+// Validate Input
 (() => {
   'use strict';
 
-  // Fetch all the forms we want to apply custom Bootstrap validation styles to
   const forms = document.querySelectorAll('.needs-validation');
 
-  // Loop over them and prevent submission
   Array.from(forms).forEach((form) => {
     form.addEventListener(
       'submit',
@@ -24,3 +28,21 @@ import * as bootstrap from 'bootstrap';
     );
   });
 })();
+
+// Cookie Warning
+const alertCookie = document.querySelector('.alert-cookie');
+document.addEventListener('DOMContentLoaded', () => {
+  getCookieLocalStorage()
+    ? displayCookie(alertCookie, 'none')
+    : displayCookie(alertCookie);
+});
+
+document.getElementById('cookie-deny').addEventListener('click', () => {
+  saveCookieLocalStorage();
+  displayCookie(alertCookie, 'none');
+});
+
+document.getElementById('cookie-accept').addEventListener('click', () => {
+  saveCookieLocalStorage('true');
+  displayCookie(alertCookie, 'none');
+});

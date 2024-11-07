@@ -28,8 +28,6 @@
 
   <meta name="theme-color" content="#dec7a6">
 
-  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self'; img-src 'self' data:;">
-
   <link rel="apple-touch-icon" sizes="180x180" href="/src/assets/images/favicon/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="/src/assets/images/favicon/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="/src/assets/images/favicon/favicon-16x16.png">
@@ -392,6 +390,17 @@
       </nav>
     </div>
   </footer>
+
+  <div class="alert-cookie bg-dark fixed-bottom my-2 rounded-3 shadow start-50 translate-middle-x" style="width: 50%;">
+    <div class="container p-4">
+      <h2 class="fw-bold fs-3 text-uppercase text-white mb-3">Cookie Warning</h2>
+      <p class="fs-6 text-white mb-3">This website uses cookies to improve your experience and analyze traffic. By continuing to browse, you agree to our <a class="link-opacity-50 link-opacity-100-hover text-decoration-none" href="#" target="_blank">Privacy Policy</p>
+      <div class="d-flex justify-content-end">
+        <button type="button" class="btn btn-outline-warning" id="cookie-deny">Deny</button>
+        <button type="button" class="btn btn-warning text-dark ms-3" id="cookie-accept">Accept</button>
+      </div>
+    </div>
+  </div>
 
   <script type="module" src="/src/scripts/index.js"></script>
 </body>
