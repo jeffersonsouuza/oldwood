@@ -28,6 +28,8 @@
 
   <meta name="theme-color" content="#dec7a6">
 
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self'; img-src 'self' data:;">
+
   <link rel="apple-touch-icon" sizes="180x180" href="/src/assets/images/favicon/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="/src/assets/images/favicon/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="/src/assets/images/favicon/favicon-16x16.png">
@@ -358,7 +360,9 @@
 
           <div class="form-floating mb-5">
             <textarea class="form-control border-2 border-top-0 border-start-0 border-end-0 border-bottom border-dark rounded-0" placeholder="Please type your message here..." id="floatingTextarea2" style="height: 177px" required></textarea>
-            <label for="floatingTextarea2" class="text-uppercase fw-bolder fs-6 text-black"><span class="d-none d-md-block">Please type </span>your message here...</label>
+            <label for="floatingTextarea2" class="text-uppercase fw-bolder fs-6 text-black d-flex">
+              <div class="d-none d-md-block">Please type&nbsp;</div>your message here...
+            </label>
             <div class="invalid-feedback">
               Please enter a message.
             </div>
@@ -379,11 +383,11 @@
       <nav class="navbar navbar-expand align-items-center justify-content-between flex-column flex-lg-row py-3">
         <p class="fs-6 text-white mb-0 text-center text-md-start">© Copyright 2022 barbershop - All right reserved</p>
         <ul class="navbar-nav flex-row mt-2 mt-lg-0">
-          <li class="nav-item"><a class="nav-link" href="https://www.facebook.com/" target=”_blank” rel=”noopener”><i class="bi bi-facebook text-white"></i></a></li>
-          <li class="nav-item"><a class="nav-link" href="https://x.com/" target=”_blank” rel=”noopener”><i class="bi bi-twitter-x text-white"></i></a></li>
-          <li class="nav-item"><a class="nav-link" href="https://www.instagram.com/" target=”_blank” rel=”noopener”><i class="bi bi-instagram text-white"></i></a></li>
-          <li class="nav-item"><a class="nav-link" href="https://br.pinterest.com/" target=”_blank” rel=”noopener”><i class="bi bi-pinterest text-white"></i></a></li>
-          <li class="nav-item"><a class="nav-link" href="https://www.linkedin.com/" target=”_blank” rel=”noopener”><i class="bi bi-linkedin text-white"></i></a></li>
+          <li class="nav-item"><a class="nav-link" href="https://www.facebook.com/" target=”_blank” rel=”noopener” aria-label="open facebook"><i class="bi bi-facebook text-white"></i></a></li>
+          <li class="nav-item"><a class="nav-link" href="https://x.com/" target=”_blank” rel=”noopener” aria-label="open x/twitter"><i class="bi bi-twitter-x text-white"></i></a></li>
+          <li class="nav-item"><a class="nav-link" href="https://www.instagram.com/" target=”_blank” rel=”noopener” aria-label="open instagram"><i class="bi bi-instagram text-white"></i></a></li>
+          <li class="nav-item"><a class="nav-link" href="https://br.pinterest.com/" target=”_blank” rel=”noopener” aria-label="open pinterest"><i class="bi bi-pinterest text-white"></i></a></li>
+          <li class="nav-item"><a class="nav-link" href="https://www.linkedin.com/" target=”_blank” rel=”noopener” aria-label="open linkedin"><i class="bi bi-linkedin text-white"></i></a></li>
         </ul>
       </nav>
     </div>
