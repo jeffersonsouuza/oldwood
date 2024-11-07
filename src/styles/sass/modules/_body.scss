@@ -3,7 +3,7 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-position: top;
-  height: 100vh;
+  height: 781px;
   .container {
     margin-bottom: 141px;
     .header-content {
@@ -36,6 +36,12 @@
 .about-bg {
   margin-bottom: 100px;
   .about-content {
+    .about-number,
+    .about-number span {
+      @media screen and (max-width: ($l-device - 1)) {
+        font-size: 60px !important;
+      }
+    }
     @include device(l) {
       padding-right: 50px;
     }
@@ -54,10 +60,8 @@
       padding: 0 30px;
     }
     header {
-      @include device(l) {
-      }
+      gap: 34px;
       @media screen and (min-width: $xxl-device) {
-        gap: 34px;
         margin: 0 110px;
         padding: 0 130px;
       }
@@ -71,6 +75,9 @@
       }
       @include device(md) {
         padding: 45px 30px;
+      }
+      @media screen and (max-width: ($md-device - 1)) {
+        padding: 45px 25px;
       }
     }
   }
@@ -148,20 +155,22 @@
     @media screen and (max-width: ($l-device - 1)) {
       height: 100%;
     }
-    .appointment-content {
-      gap: 30px;
-    }
-
-    form {
-      position: relative;
-      bottom: -151px;
-      @media screen and (max-width: ($l-device - 1)) {
-        bottom: -100px;
+    .row {
+      bottom: -135px;
+      .appointment-content {
+        gap: 30px;
+        padding-bottom: 80px;
       }
-    }
 
-    button[type='submit'] {
-      background: #f8f5ef;
+      form {
+        @media screen and (max-width: ($l-device - 1)) {
+          bottom: -100px;
+        }
+      }
+
+      button[type='submit'] {
+        background: #f8f5ef;
+      }
     }
   }
 }
