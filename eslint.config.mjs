@@ -3,6 +3,7 @@ import pluginJs from '@eslint/js';
 
 export default [
   {
+    ignores: ['.github/workflows/*.yaml'],
     languageOptions: {
       globals: {
         ...globals.browser,
