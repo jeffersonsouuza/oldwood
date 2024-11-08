@@ -106,13 +106,19 @@
             </div>
             <div class="row">
               <div class="col-6">
-                <h3 class="fs-2 fw-bold mb-3 text-center text-md-start about-number">99<span class="fw-bold fs-2 text-warning">%</span></h3>
+                <div class="flex-column flex-row">
+                  <span class="fs-2 fw-bold mb-3 text-center text-md-start about-number number">99</span>
+                  <span class="fw-bold fs-2 text-warning">%</span>
+                </div>
                 <div class="text-center text-md-start">
                   <span class="text-uppercase fs-4 fw-bold ">Customer Satisfaction</span>
                 </div>
               </div>
               <div class="col-6">
-                <h3 class="fs-2 fw-bold mb-3 text-center text-md-start about-number">10<span class="fw-bold fs-2 text-warning">+</span></h3>
+                <div class="flex-column flex-row">
+                  <span class="fs-2 fw-bold mb-3 text-center text-md-start about-number number">10</span>
+                  <span class="fw-bold fs-2 text-warning">+</span>
+                </div>
                 <div class="text-center text-md-start">
                   <span class="text-uppercase fs-4 fw-bold text-center text-md-start">years of experience</span>
                 </div>
@@ -391,13 +397,15 @@
     </div>
   </footer>
 
-  <div class="alert-cookie bg-dark fixed-bottom my-2 rounded-3 shadow start-50 translate-middle-x" style="width: 50%;">
-    <div class="container p-4">
-      <h2 class="fw-bold fs-3 text-uppercase text-white mb-3">Cookie Warning</h2>
-      <p class="fs-6 text-white mb-3">This website uses cookies to improve your experience and analyze traffic. By continuing to browse, you agree to our <a class="link-opacity-50 link-opacity-100-hover text-decoration-none" href="#" target="_blank">Privacy Policy</p>
-      <div class="d-flex justify-content-end">
-        <button type="button" class="btn btn-outline-warning" id="cookie-deny">Deny</button>
-        <button type="button" class="btn btn-warning text-dark ms-3" id="cookie-accept">Accept</button>
+  <div class="alert-cookie bg-black bg-gradient fixed-bottom shadow m-3 rounded-3">
+    <div class="container py-4">
+      <div class="row align-items-center">
+        <i class="bi bi-cookie col-1 text-warning text-center fs-3 d-none d-md-block"></i>
+        <p class="col-12 col-md-8 text-white m-0" style="font-size: 14px;">This website uses cookies to improve your experience and analyze traffic. By continuing to browse, you agree to our <a class="link-opacity-75-hover text-decoration-none" href="#" target="_blank">Privacy Policy</a>.</p>
+        <div class="col-12 col-md-3 d-flex justify-content-end mt-3 mt-md-0">
+          <button type="button" class="btn btn-sm btn-outline-warning px-3" id="cookie-deny">Deny</button>
+          <button type="button" class="btn btn-sm btn-warning text-dark ms-4" id="cookie-accept">Accept</button>
+        </div>
       </div>
     </div>
   </div>

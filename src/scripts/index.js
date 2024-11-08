@@ -4,6 +4,7 @@ import {
   getCookieLocalStorage,
   displayCookie,
 } from './modules/cookie-consent.js';
+import AnimaNumeros from './modules/AnimaNumeros.js';
 
 import * as bootstrap from 'bootstrap';
 
@@ -45,4 +46,9 @@ document.getElementById('cookie-deny').addEventListener('click', () => {
 document.getElementById('cookie-accept').addEventListener('click', () => {
   saveCookieLocalStorage('true');
   displayCookie(alertCookie, 'none');
+});
+
+// Animated Numbers
+document.querySelectorAll('.number').forEach((element) => {
+  new AnimaNumeros(element);
 });
