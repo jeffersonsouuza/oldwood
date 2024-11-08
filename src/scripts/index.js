@@ -6,7 +6,13 @@ import {
 } from './modules/cookie-consent.js';
 import AnimaNumeros from './modules/AnimaNumeros.js';
 
-import * as bootstrap from 'bootstrap';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+AOS.init({
+  duration: 1000,
+});
+
+// import * as bootstrap from 'bootstrap';
 
 // Validate Input
 (() => {
