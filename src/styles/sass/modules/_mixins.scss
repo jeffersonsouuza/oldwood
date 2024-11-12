@@ -43,8 +43,9 @@ $xs-device: 0;
 }
 
 @mixin zoom($scale: 1.01) {
-  transition: transform 0.3s ease;
+  transition: transform 0.3s ease-in-out;
   &:hover {
     transform: scale($scale);
+    transition: transform 0.3s ease-in-out;
   }
 }

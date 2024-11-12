@@ -39,7 +39,7 @@
   <title>Oldwood Barber</title>
 </head>
 
-<body>
+<body class="position-relative">
   <header class="header-bg container-fluid d-flex align-items-end" data-aos="fade">
     <div class=" container grid">
       <div class="header-content grid" data-aos="fade-down">
@@ -307,21 +307,25 @@
 
           <div class="d-flex align-items-center position-relative" data-aos="zoom-in">
             <div class="bg-white p-3">
-              <img class="mx-auto" src="/src/assets/images/icons/phone.svg" width="36" height="36" alt="phone icon">
+              <a class="text-decoration-none" href="tel:+624754533465">
+                <img class="mx-auto" src="/src/assets/images/icons/phone.svg" width="36" height="36" alt="phone icon">
+              </a>
             </div>
             <div class="ps-4">
               <h3 class="fw-bold fs-6 text-uppercase text-white">Give us a Call</h3>
-              <a class="fs-4 text-white text-decoration-none" href="tel:+624754533465">(47) 5453 - 3465</a>
+              <a class="fs-4 text-white text-decoration-none phone-number" href="tel:+624754533465">(47) 5453 - 3465</a>
             </div>
           </div>
 
           <div class="d-flex align-items-center position-relative" data-aos="zoom-in">
             <div class="bg-white p-3">
-              <img class="mx-auto" src="/src/assets/images/icons/mail.svg" width="36" height="36" alt="phone icon">
+              <a class="text-decoration-none" href="mailto:hello@example.com">
+                <img class="mx-auto" src="/src/assets/images/icons/mail.svg" width="36" height="36" alt="phone icon">
+              </a>
             </div>
             <div class="ps-4">
               <h3 class="fw-bold fs-6 text-uppercase text-white">Send us an email</h3>
-              <a class="fs-4 text-white text-decoration-none" href="mailto:hello@example.com">hello@example.com</a>
+              <a class="fs-4 text-white text-decoration-none mail-address" href="mailto:hello@example.com">hello@example.com</a>
             </div>
           </div>
         </div>
@@ -375,7 +379,7 @@
           </div>
 
           <div class="col-12">
-            <button data-aos="fade-up" class="btn btn-primary border-0 text-uppercase fw-bold fs-5 text-black px-4 py-2" type="submit">Book an Appointment</button>
+            <button data-aos="fade-up" class="btn btn-primary border-0 text-uppercase fw-bold fs-5 text-black px-4 py-2 shadow" type="submit">Book an Appointment</button>
           </div>
         </form>
       </div>
@@ -389,11 +393,11 @@
       <nav class="navbar navbar-expand align-items-center justify-content-between flex-column flex-lg-row py-3">
         <p class="fs-6 text-white mb-0 text-center text-md-start">© Copyright 2022 barbershop - All right reserved</p>
         <ul class="navbar-nav flex-row mt-2 mt-lg-0">
-          <li class="nav-item"><a class="nav-link" href="https://www.facebook.com/" target=”_blank” rel=”noopener” aria-label="open facebook"><i class="bi bi-facebook text-white"></i></a></li>
-          <li class="nav-item"><a class="nav-link" href="https://x.com/" target=”_blank” rel=”noopener” aria-label="open x/twitter"><i class="bi bi-twitter-x text-white"></i></a></li>
-          <li class="nav-item"><a class="nav-link" href="https://www.instagram.com/" target=”_blank” rel=”noopener” aria-label="open instagram"><i class="bi bi-instagram text-white"></i></a></li>
-          <li class="nav-item"><a class="nav-link" href="https://br.pinterest.com/" target=”_blank” rel=”noopener” aria-label="open pinterest"><i class="bi bi-pinterest text-white"></i></a></li>
-          <li class="nav-item"><a class="nav-link" href="https://www.linkedin.com/" target=”_blank” rel=”noopener” aria-label="open linkedin"><i class="bi bi-linkedin text-white"></i></a></li>
+          <li class="nav-item"><a class="nav-link" href="https://www.facebook.com/" target=”_blank” rel=”noopener” aria-label="open facebook" data-bs-toggle="tooltip" data-bs-title="Open Facebook"><i class="bi bi-facebook text-white"></i></a></li>
+          <li class="nav-item"><a class="nav-link" href="https://x.com/" target=”_blank” rel=”noopener” aria-label="open x/twitter" data-bs-toggle="tooltip" data-bs-title="Open Twitter"><i class="bi bi-twitter-x text-white"></i></a></li>
+          <li class="nav-item"><a class="nav-link" href="https://www.instagram.com/" target=”_blank” rel=”noopener” aria-label="open instagram" data-bs-toggle="tooltip" data-bs-title="Open instagram"><i class="bi bi-instagram text-white"></i></a></li>
+          <li class="nav-item"><a class="nav-link" href="https://br.pinterest.com/" target=”_blank” rel=”noopener” aria-label="open pinterest" data-bs-toggle="tooltip" data-bs-title="Open Pinterest"><i class="bi bi-pinterest text-white"></i></a></li>
+          <li class="nav-item"><a class="nav-link" href="https://www.linkedin.com/" target=”_blank” rel=”noopener” aria-label="open linkedin" data-bs-toggle="tooltip" data-bs-title="Open Linkedin"><i class="bi bi-linkedin text-white"></i></a></li>
         </ul>
       </nav>
     </div>
@@ -412,7 +416,12 @@
     </div>
   </div>
 
+  <div class="back-to-top rounded-circle position-fixed d-none" data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Back to Top">
+    <i class="bi bi-arrow-up-circle text-warning"></i>
+  </div>
+
   <script type="module" src="/src/scripts/index.js"></script>
+
 </body>
 
 </html>

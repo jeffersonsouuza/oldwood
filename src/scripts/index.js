@@ -12,7 +12,15 @@ AOS.init({
   duration: 1000,
 });
 
-// import * as bootstrap from 'bootstrap';
+import * as bootstrap from 'bootstrap';
+
+// Popover Bootstrap
+const tooltipTriggerList = [].slice.call(
+  document.querySelectorAll('[data-bs-toggle="tooltip"]')
+);
+tooltipTriggerList.forEach(function (tooltipTriggerEl) {
+  new bootstrap.Tooltip(tooltipTriggerEl);
+});
 
 // Validate Input
 (() => {
@@ -57,4 +65,25 @@ document.getElementById('cookie-accept').addEventListener('click', () => {
 // Animated Numbers
 document.querySelectorAll('.number').forEach((element) => {
   new AnimaNumeros(element);
+});
+
+//Button back to top
+document.addEventListener('DOMContentLoaded', () => {
+  const backToTop = document.querySelector('.back-to-top');
+  const headerBg = document.querySelector('.header-bg');
+
+  function toggleBackToTop() {
+    const headerRect = headerBg.getBoundingClientRect();
+    if (headerRect.bottom < 0) {
+      backToTop.classList.remove('d-none');
+    } else {
+      backToTop.classList.add('d-none');
+    }
+  }
+
+  window.addEventListener('scroll', toggleBackToTop);
+
+  backToTop.addEventListener('click', () => {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  });
 });

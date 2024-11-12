@@ -160,6 +160,27 @@
       .appointment-content {
         gap: 30px;
         padding-bottom: 80px;
+        img {
+          @include zoom(1.2);
+        }
+        .phone-number,
+        .mail-address {
+          position: relative;
+          text-decoration: none;
+          &::after {
+            content: '';
+            position: absolute;
+            left: 0;
+            bottom: -5px;
+            width: 0;
+            height: 2px;
+            background-color: #f8f5ef;
+            transition: width 0.3s ease;
+          }
+          &:hover::after {
+            width: 100%;
+          }
+        }
       }
 
       form {
@@ -170,6 +191,11 @@
 
       button[type='submit'] {
         background: #f8f5ef;
+        transition: background 0.3s ease-in;
+        &:hover {
+          background: $warning;
+          transition: background 0.3s ease-in;
+        }
       }
     }
   }
@@ -181,4 +207,27 @@
   background-size: cover;
   background-position: center;
   height: 451px;
+}
+
+footer {
+  a {
+    @include zoom(1.2);
+  }
+  .bi {
+    &:hover {
+      color: $warning !important;
+    }
+  }
+}
+
+.back-to-top {
+  bottom: 20px;
+  right: 10px;
+  cursor: pointer;
+  z-index: 1000;
+  @include zoom();
+
+  .bi {
+    font-size: 30px;
+  }
 }
