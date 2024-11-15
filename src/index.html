@@ -335,7 +335,7 @@
 
         <form class="col-lg-6 p-4 pb-5 bg-white shadow needs-validation" novalidate>
           <div class="form-floating mb-3" data-aos="fade-up">
-            <input type="name" class="form-control border-2 border-top-0 border-start-0 border-end-0 border-bottom border-dark rounded-0" id="text" placeholder="Nelson Mandela" required>
+            <input type="name" class="form-control border-2 border-top-0 border-start-0 border-end-0 border-bottom border-dark rounded-0" id="text" placeholder="Nelson Mandela" minlength="3" maxlength="30" required>
             <label for="name" class="text-uppercase fw-bolder fs-6 text-black">Full name</label>
             <div class="invalid-feedback">
               Please fill in a valid name.
@@ -343,7 +343,7 @@
           </div>
 
           <div class="form-floating mb-3" data-aos="fade-up">
-            <input type="text" class="form-control border-2 border-top-0 border-start-0 border-end-0 border-bottom border-dark rounded-0" id="subject" placeholder="subject" required>
+            <input type="text" class="form-control border-2 border-top-0 border-start-0 border-end-0 border-bottom border-dark rounded-0" id="subject" placeholder="subject" minlength="3" maxlength="30" required>
             <label for="subject" class="text-uppercase fw-bolder fs-6 text-black">subject</label>
             <div class="invalid-feedback">
               Please fill in a subject.
@@ -372,7 +372,7 @@
           </div>
 
           <div class="form-floating mb-5" data-aos="fade-up">
-            <textarea class="form-control border-2 border-top-0 border-start-0 border-end-0 border-bottom border-dark rounded-0" placeholder="Please type your message here..." id="floatingTextarea2" style="height: 177px" required></textarea>
+            <textarea class="form-control border-2 border-top-0 border-start-0 border-end-0 border-bottom border-dark rounded-0" placeholder="Please type your message here..." id="floatingTextarea2" style="height: 177px" minlength="5" maxlength="200" required></textarea>
             <label for="floatingTextarea2" class="text-uppercase fw-bolder fs-6 text-black d-flex">
               <div class="d-none d-md-block">Please type&nbsp;</div>your message here...
             </label>

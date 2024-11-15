@@ -5,6 +5,7 @@ import {
   displayCookie,
 } from './modules/cookie-consent.js';
 import AnimaNumeros from './modules/AnimaNumeros.js';
+import { maskPhoneNumber } from './modules/validate-form.js';
 
 import AOS from 'aos';
 import 'aos/dist/aos.css';
@@ -87,3 +88,5 @@ document.addEventListener('DOMContentLoaded', () => {
     window.scrollTo({ top: 0, behavior: 'smooth' });
   });
 });
+
+document.getElementById('phone').addEventListener('input', maskPhoneNumber);
