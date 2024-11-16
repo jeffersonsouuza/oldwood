@@ -5,7 +5,10 @@ import {
   displayCookie,
 } from './modules/cookie-consent.js';
 import AnimaNumeros from './modules/AnimaNumeros.js';
-import { maskPhoneNumber } from './modules/validate-form.js';
+import {
+  maskPhoneNumber,
+  preventMaliciousInput,
+} from './modules/validate-form.js';
 
 import AOS from 'aos';
 import 'aos/dist/aos.css';
@@ -89,4 +92,9 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 });
 
+// Form Validation
 document.getElementById('phone').addEventListener('input', maskPhoneNumber);
+
+document.querySelectorAll('input, textarea').forEach((field) => {
+  field.addEventListener('input', preventMaliciousInput);
+});
